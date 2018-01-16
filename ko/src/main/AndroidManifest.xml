@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.testapp.www.myapplication">
+    package="com.koreanair.samplemobilequiz">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--<uses-permission android:name="android.permission.CALL_PHONE" />-->
+
 
     <application
         android:allowBackup="true"
@@ -19,8 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".Quiz1WebViewActivity" />
+        <activity android:name=".Quiz2ListViewActivity" />
+        <activity android:name=".Quiz4LaunchAppActivity" />
+        <activity android:name=".Quiz5ApiCallActivity" />
+        <activity android:name=".Quiz3SendIntentActivity" />
+        <activity android:name=".Quiz3ReceiveIntentActivity"></activity>
     </application>
 
 </manifest>
