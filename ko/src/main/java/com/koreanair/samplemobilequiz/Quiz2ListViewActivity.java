@@ -26,8 +26,6 @@ public class Quiz2ListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz2_list_view);
 
         //TODO: Quiz2. ListView로 위 array값(values) 출력
-        ListView listView = (ListView)findViewById(R.id.list_view_1);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,values);
-        listView.setAdapter(adapter);
+
     }
 }

@@ -13,16 +13,5 @@ public class Quiz3ReceiveIntentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz3_receive_intent);
 
 
-        TextView textView1 = (TextView)findViewById(R.id.tv_username);
-        TextView textView2 = (TextView)findViewById(R.id.tv_pwd);
-
-        Intent intent = getIntent();
-        String userName = intent.getStringExtra("userName");
-        String password = intent.getStringExtra("password");
-
-        textView1.setText(userName);
-        textView2.setText(password);
-
-
     }
 }

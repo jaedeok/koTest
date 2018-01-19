@@ -15,8 +15,6 @@ public class Quiz1WebViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz1_web_view);
 
         // TODO: Quiz1. 위 urlForLoading 주소를 사용하여 Web View 구현하기
-        WebView webView = (WebView)findViewById(R.id.web_view_1);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl(urlForLoading);
+
     }
 }

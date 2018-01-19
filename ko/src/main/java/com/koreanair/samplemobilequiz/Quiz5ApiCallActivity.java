@@ -87,33 +87,10 @@ public class Quiz5ApiCallActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Void args) {
-            _location.setText(_locationValue);
-            _condition.setText(_conditionValue);
-            _temperature.setText(_temparatureValue);
+
         }
 
         private JSONObject getJSONfromURL(String endpoint){
-
-            try{
-                URL url = new URL(endpoint);
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.connect();
-
-                if(conn.getResponseCode()==conn.HTTP_OK){
-                    InputStreamReader inputStreamReader = new InputStreamReader(conn.getInputStream(),"UTF-8");
-                    BufferedReader reader = new BufferedReader(inputStreamReader);
-                    StringBuffer buffer = new StringBuffer();
-                    String line;
-                    while ((line=reader.readLine())!=null){
-                        buffer.append(line);
-                    }
-                    reader.close();
-                    JSONObject jsonObject = new JSONObject(buffer.toString());
-                    return jsonObject;
-                }
-            }catch (Exception e){
-
-            }
 
             return null;
         }
